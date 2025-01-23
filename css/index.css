@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(35, 27, 64);
+}
+header{
+    background-image: url(/images/backanimecode.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.imageoverlay{
+    background-color: rgb(19, 20, 22, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo .logo-text{
+    color: rgb(221, 163, 247);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.logo .dot{
+    color: rgb(221, 163, 247);
+    font-size: 30px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: all 0.5s ease-in;
+}
+.navbar ul .contact{
+    border: 1px solid white;
+}
+.navbar ul a:hover{
+    background-color: rgb(221, 163, 247);
+    font-weight: 900;
+}
