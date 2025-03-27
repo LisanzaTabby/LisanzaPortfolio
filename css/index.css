@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    margin:0;
-    padding: 0;
     background: linear-gradient(rgba(18,0,12,255),rgba(19,1,13,255))
 }
 h2{
@@ -110,17 +108,25 @@ nav ul li a:hover{
     background-color: #d724b1;
 }
 .intro{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20%;
+    margin: 10px;
+    display: flex;
+}
+.intro .description{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
 }
 .intro .profpic{
     margin: 50px;
+    animation: moveBox 2s infinite;
 }
 .intro .profpic img{
-    width: 50%;
+    width: 20%;
     height: 50%;
+    border-radius: 10%;   
 }
+
+
 
 @keyframes animate{
     0%{
@@ -132,4 +138,10 @@ nav ul li a:hover{
       opacity: 0;  
     }
 }
+@keyframes moveBox {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100px); }
+    100% { transform: translateY(0); }
+}
+
 
