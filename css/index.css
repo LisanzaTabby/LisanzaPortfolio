@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(rgba(18,0,12,255),rgba(19,1,13,255))
+    background: linear-gradient()
 }
 h2{
     font-family: poppins;
