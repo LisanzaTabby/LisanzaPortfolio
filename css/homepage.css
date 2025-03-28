@@ -141,7 +141,13 @@ nav .logo h2{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    padding: 7px;
     text-transform: uppercase;
+    transition: all 0.5s ease-out;
+}
+.navlinks ul li a:hover{
+    font-size: 2em;
+    background-color: #4ac0fc;
 }
 .main{
     display: flex;
