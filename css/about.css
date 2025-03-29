@@ -118,6 +118,7 @@ header {
     background: rgba(72, 0, 48, 0.8);
     padding: 20px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
+    position: sticky;
 }
 header nav{
     display: grid;
@@ -151,12 +152,11 @@ nav .logo h2{
 }
 .main {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 30px; 
     padding: 30px;
 }
-
-/* Profile Image Styling */
 .main .description .imagecontainer {
     position: relative;
     width: 280px;
@@ -164,13 +164,11 @@ nav .logo h2{
     margin: auto;
     overflow: hidden;
     border-radius: 30px;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
     background: linear-gradient(120deg, #dc21b8, #4ac0fc);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
-    padding: 10px; /* To add spacing around the image */
+    padding: 20px; 
 }
-
-/* Background Shape */
 .main .description .imagecontainer::before {
     content: "";
     position: absolute;
@@ -179,7 +177,7 @@ nav .logo h2{
     background: linear-gradient(135deg, #dc21b8, #4ac0fc);
     top: -10px;
     left: -10px;
-    z-index: -1;
+    z-index: -2;
     border-radius: 35px;
     transform: rotate(-5deg);
 }
@@ -191,13 +189,60 @@ nav .logo h2{
     object-fit: cover;
     border-radius: 20px;
     transform: rotate(5deg);
+    z-index: 1;
     transition: transform 0.3s ease-in-out;
 }
-
-/* Hover Effect */
 .main .description .imagecontainer:hover img {
     transform: rotate(0deg) scale(1.03);
 }
+.main .bio{
+    color: white;
+    padding: 40px;
+}
+.main .bio h2{
+    font-size: 3.5em;
+    padding: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+.bio p{
+    font-size: 1.5em;
+    padding: 20px;
+}
+#skills{
+    font-size: 3.5em;
+    text-align: center;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+.skills{
+    margin: 30px;
+}
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.skills ul li{
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc);
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    list-style: none;
+    transition: all 1s ease;    
+}
+.skills ul li:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 25px rgba(237, 236, 236, 0.6);
+}
+
 @keyframes animate{
     0%{
       transform: scale(0) translateY(0) rotate(0);  
@@ -219,11 +264,4 @@ nav .logo h2{
         transform: translateY(0); 
     }
     
-}
-@keyframes wavehand {
-    0% { transform: rotate(0deg); opacity: 1; }
-    25% { transform: rotate(-20deg); opacity: 0.9; }
-    50% { transform: rotate(20deg); opacity: 1; }
-    75% { transform: rotate(-20deg); opacity: 0.9; }
-    100% { transform: rotate(0deg); opacity: 1; }
 }

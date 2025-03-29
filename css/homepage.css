@@ -151,6 +151,7 @@ nav .logo h2{
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 30px; 
     padding: 30px;
@@ -169,6 +170,12 @@ nav .logo h2{
     color: #fff;
     padding: 20px;
     font-size: 2em;
+}
+.main .intro h2 .hand{
+    font-size: 2.5em;
+    display: inline-block; /* Ensures transform works */
+    transform-origin: center bottom; /* Makes the waving more natural */
+    animation: wavehand 3s ease-in-out 5;
 }
 .main .intro .title1{
     color: #4ac0fc;
@@ -213,4 +220,11 @@ nav .logo h2{
         transform: translateY(0); 
     }
     
+}
+@keyframes wavehand {
+    0% { transform: rotate(0deg); opacity: 1; }
+    25% { transform: rotate(-20deg); opacity: 0.9; }
+    50% { transform: rotate(20deg); opacity: 1; }
+    75% { transform: rotate(-20deg); opacity: 0.9; }
+    100% { transform: rotate(0deg); opacity: 1; }
 }
