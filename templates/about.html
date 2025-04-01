@@ -6,6 +6,10 @@
     <title>About Tabby</title>
     <link rel="stylesheet" href="/css/about.css">
     <link rel="icon" href="/images/tabbylogo1.png"type="image/x-icon">
+    <!--Google Font Family Merriweather-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <!---Fontawesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,14 +17,13 @@
     <header>
         <nav>
             <div class="logo">
-                <h2>SheDev<span class="mark">.</span></h2>
+                <h2>Tabby<span class="mark">.</span></h2>
             </div>
             <div class="navlinks">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -40,30 +43,109 @@
     </div>
     <br><br>
     <div class="main">
-        <div class="description">
+        <div class="aboutmesection">
+            <div class="bio">
+                <h2>Who Am I ?</h2>
+                <p>I am a passionate software engineer and aspiring data analyst, pursuing a Bachelor’s in IT at Africa International University. I thrive in software development, data analytics, and cybersecurity, with a strong focus on building impactful tech solutions.
+                    <br><br>
+    
+                As a Women Techmakers and SheCode Africa member, I advocate for women in tech, mentoring and fostering inclusive communities. Skilled in Django, network troubleshooting, and data analysis, I am driven by the mission to bridge technology and real-world challenges.</p>
+            </div>
             <div class="imagecontainer">
-                <img src="/images/me.jpeg" alt="me">                
+                <img src="/images/me.jpeg" class="back"alt="me">                
+                <img src="/images/me.jpeg" class= "middle"alt="me">                
+                <img src="/images/me.jpeg" class="front"alt="me"> 
+                <img src="/images/pin.png"class="pin" alt="pushpin">               
             </div>
         </div>
-        <div class="bio">
-            <h2>Who Am I ?</h2>
-            <hr>
-            <p>I am a passionate software engineer and aspiring data analyst, pursuing a Bachelor’s in IT at Africa International University. I thrive in software development, data analytics, and cybersecurity, with a strong focus on building impactful tech solutions.
-                <br><br>
-
-            As a Women Techmakers and SheCode Africa member, I advocate for women in tech, mentoring and fostering inclusive communities. Skilled in Django, network troubleshooting, and data analysis, I am driven by the mission to bridge technology and real-world challenges.</p>
-        </div>
-    </div><br><br><br>
+        
+    <br><br><br>
     <h2 id="skills">My Skills</h2><br>
     <div class="skills">
             <ul>
-                <li><i class="fa-brands fa-html5" style="color: #dc21b8;"></i><br>HTML</li>
-                <li><i class="fa-brands fa-css3" style="color: #dc21b8;"></i><br>CSS</li>
-                <li><i class="fa-brands fa-python" style="color: #0a7b31;"></i><br>Python</li>
-                <li><i class="fa-brands fa-git-alt" style="color: #830202;"></i><br>Git</li>
-                <li><i class="fa-solid fa-magnifying-glass-chart" style="color: #0d0d0d;"></i><br>Data Analysis</li>
+                <li>
+                    <i class="fa-solid fa-desktop" style="color: #4ac0fc;"></i><br><br>
+                    <h4 class="skilltitle">Front-End</h4>
+                    <p>HTML,CSS & Tailwind CSS</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database" style="color: #4ac0fc;"></i></i><br><br>
+                    <h4 class="skilltitle">Back-End</h4>
+                    <p>Python, Django, SQL, MySQL, PostGreSQL</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-simple" style="color: #4ac0fc;"></i><br><br>
+                    <h4 class="skilltitle">Data Analysis</h4>
+                    <p>Python, Excel, & Tableau</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-pen-nib" style="color: #4ac0fc;"></i><br><br>
+                    <h4 class="skilltitle">Web Design</h4>
+                    <p>Figma</p>
+                </li>
             </ul>
     </div>
+    <h2 id="projects">My Projects</h2>
+    <div class="projectsection">
+        <div class="project">
+            <h4 class="projectname">Lotus Scholarship Student Management System</h4>
+            <div class="image">
+                <img src="/images/lotusproject.png" alt="project1">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, soluta, aut officiis exercitationem non perferendis quis cum, maiores totam dolor eaque dignissimos eveniet tempora culpa ipsum placeat? Fugiat, consectetur animi!</p>
+            </div>
+            <div class="details">
+                <a href="https://github.com/lisanzatabby"target="_blank"><i class="fa-brands fa-github" style="color: #dc21b8;"></i></a>
+                <a href="#"><i class="fa-solid fa-eye" style="color: #4ac0fc;"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h4 class="projectname">Lotus Scholarship Student Management System</h4>
+            <div class="image">
+                <img src="/images/lotusproject.png" alt="project1">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, soluta, aut officiis exercitationem non perferendis quis cum, maiores totam dolor eaque dignissimos eveniet tempora culpa ipsum placeat? Fugiat, consectetur animi!</p>
+            </div>
+            <div class="details">
+                <a href="https://github.com/lisanzatabby"target="_blank"><i class="fa-brands fa-github" style="color: #dc21b8;"></i></a>
+                <a href="#"><i class="fa-solid fa-eye" style="color: #4ac0fc;"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h4 class="projectname">Lotus Scholarship Student Management System</h4>
+            <div class="image">
+                <img src="/images/lotusproject.png" alt="project1">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, soluta, aut officiis exercitationem non perferendis quis cum, maiores totam dolor eaque dignissimos eveniet tempora culpa ipsum placeat? Fugiat, consectetur animi!</p>
+            </div>
+            <div class="details">
+                <a href="https://github.com/lisanzatabby"target="_blank"><i class="fa-brands fa-github" style="color: #dc21b8;"></i></a>
+                <a href="#"><i class="fa-solid fa-eye" style="color: #4ac0fc;"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h4 class="projectname">Lotus Scholarship Student Management System</h4>
+            <div class="image">
+                <img src="/images/lotusproject.png" alt="project1">
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, soluta, aut officiis exercitationem non perferendis quis cum, maiores totam dolor eaque dignissimos eveniet tempora culpa ipsum placeat? Fugiat, consectetur animi!</p>
+            </div>
+            <div class="details">
+                <a href="https://github.com/lisanzatabby"target="_blank"><i class="fa-brands fa-github" style="color: #dc21b8;"></i></a>
+                <a href="#"><i class="fa-solid fa-eye" style="color: #4ac0fc;"></i></a>
+            </div>
+        </div>
+        
+        
+        </div>
+    </div>
+    <footer>
+        <p>©️2025, Tabitha Tsisika Lisanza, All Rights reserved.</p>
+    </footer>
     
 </body>
 </html>

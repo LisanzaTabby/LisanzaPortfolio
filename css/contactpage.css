@@ -159,57 +159,6 @@ nav .logo h2{
     font-size: 2em;
     background-color: #4ac0fc;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 30px; 
-    padding: 30px;
-}
-.main .profpic{
-    width: 20%;
-    height: 20%;
-}
-.main .profpic img{
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
-    animation: movepic 5s ease-in-out infinite;
-}
-.main .intro{
-    color: #fff;
-    padding: 20px;
-    font-size: 2em;
-}
-.main .intro h2 .hand{
-    font-size: 2.5em;
-    display: inline-block; /* Ensures transform works */
-    transform-origin: center bottom; /* Makes the waving more natural */
-    animation: wavehand 3s ease-in-out 5;
-}
-.main .intro .title1{
-    color: #4ac0fc;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.button{
-    padding: 20px;
-
-}
-.button a{
-    text-decoration: none;
-    background: linear-gradient(90deg,#dc21b8,#4ac0fc);
-    padding: 10px;
-    border-radius: 10px;
-}
-.socials ul{
-    display: flex;
-}
-.socials ul li{
-    list-style: none;
-    padding: 10px;
-}
-
 .footer{
     background: rgba(255,255,255,0.1);
     color: #fff;
