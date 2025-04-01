@@ -1,2 +1,2 @@
 # LisanzaPortfolio
-My portfolio Website Using HTML, and Tailwind CSS
+My portfolio Website Using pure HTML and CSS
