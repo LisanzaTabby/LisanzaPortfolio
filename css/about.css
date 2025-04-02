@@ -234,7 +234,7 @@ nav .logo h2{
 }
 .main .bio{
     color: white;
-    padding: 40px;
+    padding: 20px;
 }
 .main .bio h2{
     text-align: center;
@@ -255,12 +255,48 @@ nav .logo h2{
     border-radius: 2px;
 }
 .bio p{
-    font-size: 1.5em;
+    font-size: 1em;
+    padding: 10px;
+}
+.button{
     padding: 20px;
+
+}
+.button a{
+    text-decoration: none;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.button a:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 25px rgba(237, 236, 236, 0.6); 
+}
+#interests{
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 70px;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+#interests::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc) ;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.interests{
+    margin: 30px;
 }
 #skills{
     font-size: 3.5em;
     text-align: center;
+    margin-top: 70px;
     background: linear-gradient(#dc21b8,#4ac0fc);
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
@@ -273,6 +309,28 @@ nav .logo h2{
     background: linear-gradient(90deg,#dc21b8,#4ac0fc) ;
     margin: 10px auto 0;
     border-radius: 2px;
+}
+.interests ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.interests ul li{
+    list-style: none;
+}
+.interests ul li i{
+    background: rgba(72, 0, 48, 0.849);
+    border-radius: 50%;
+    padding: 30px;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 600;
+    transition: all 1s ease;    
+}
+.interests ul li i:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 25px rgba(237, 236, 236, 0.6);
 }
 .skills{
     margin: 30px;
@@ -325,7 +383,7 @@ nav .logo h2{
 }
 .projectsection{
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
     margin-top: 20px;
     padding: 25px;
     gap: 30px;
@@ -402,6 +460,117 @@ nav .logo h2{
     margin: 10px auto 0;
     border-radius: 2px;
 }
+#education{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+#education::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc) ;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.educationsection{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.educationsection::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(#4ac0fc,#dc21b8);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: flowline 6s linear forwards;
+
+}
+.educationsection .education_container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: appear 1s linear forwards;
+    opacity: 0;
+}
+.education_container:nth-child(2){
+    animation-delay: 1s;
+}
+.education_container:nth-child(3){
+    animation-delay: 2s;
+}
+.education_container:nth-child(4){
+    animation-delay: 3s;
+}
+.education_container:nth-child(5){
+    animation-delay: 5s;
+}
+.educationsection .education_container .text_container{
+    padding: 20px 30px;
+    background: linear-gradient(90deg, #4ac0fc,#dc21b8);
+    position: relative;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+.text_container h3{
+    font-weight: 800;
+}
+.text_container #date{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.right {
+    left: 50%;
+}
+.left{
+    left: 0;
+}
+.education_container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 10%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    background: linear-gradient(90deg,#4ac0fc,#dc21b8);
+}
+.right img{
+    left: -20px;
+}
+.right-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #dc21b8;
+    right: -15px;
+
+}
+.left-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #4ac0fc;
+    left: -15px;
+
+}
 footer{
     background: rgba(255,255,255,0.1);
     color: #fff;
@@ -427,6 +596,94 @@ footer{
     }
     100% { 
         transform: translateY(0); 
-    }
-    
+    }    
 }
+@keyframes flowline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    } 
+}
+@keyframes appear {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }  
+}
+/*Respnsive Design Media Queries*/
+@media screen and (max-width: 600px){
+    .interests ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .educationsection{
+        margin: 50px auto;
+    }
+    .educationsection::after{
+        left: 31px;
+    }
+    .education_container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text_container{
+        font-size: 13px;
+    }
+    .text_container #date{
+        margin-bottom: 10px;
+    }
+    .right{
+        left: 5px;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .right-arrow, .left-arrow{
+        border-right: 15px solid #dc21b8;
+        border-left: 0;
+        left: -15px;
+    }
+    .projectsection{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+    .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
+        max-width: 100px;
+    }
+}
+@media screen and (min-width: 600px){
+    .educationsection{
+        margin: 70px auto;
+    }
+    .education_container{
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 30px;
+    }
+    .text_container{
+        font-size: 13px;
+    }
+    .text_container #date{
+        margin-bottom: 10px;
+    }
+    .projectsection{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        gap: 10px;
+    }  
+    .projectsection .project{
+        padding: 20px;
+    }
+    .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
+        max-width: 200px;
+    }
+}
+
