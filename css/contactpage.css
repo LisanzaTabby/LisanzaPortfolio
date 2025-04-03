@@ -342,7 +342,7 @@ footer{
     
     .contact-info .message-form form input,
     .contact-info .message-form form textarea {
-        width: 100%;
+        width: 50%;
         padding: 8px;
         margin-bottom: 10px;
     }
@@ -394,16 +394,24 @@ footer{
         font-size: 2.5em;
     }
     .contact-info {
-        padding: 20px;
+        padding: 10px;
     }
     .contact-info .message-form {
-        padding: 15px;
+        padding: 12px;
     }
     .contact-info .message-form h2 {
-        font-size: 18px;
-    }
-    .contact-info .message-form form button {
+        text-align: left;
         font-size: 14px;
+    }
+    .contact-info .message-form form input,
+    .contact-info .message-form form textarea {
+        width: 75%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }    
+    .contact-info .message-form form button {
+        font-size: 12px;
+        width: 75%;
     }
     .socials ul li a {
         font-size: 1.5em;
@@ -411,33 +419,69 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-    nav .logo h2 {
-        font-size: 1.5em;
+    .nav{
+        max-width: 100%;
+        padding: 10px;
     }
-    .navlinks ul li a {
-        font-size: 1em;
+    .navlinks ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navlinks ul li{
+        display: flex;
+        flex-wrap: wrap;
     }
     #title, #contact_links {
         font-size: 2em;
     }
     .contact-info {
-        padding: 10px;
+        padding: 0;
     }
     .contact-info .message-form {
-        padding: 15px;
+        max-width: 50%;
+        padding: 8px;
     }
     .contact-info .message-form h2 {
-        font-size: 14px;
+        text-align: left;
+        font-size: 10px;
     }
     .contact-info .message-form form input,
     .contact-info .message-form form textarea {
+        width: 50%;
         padding: 8px;
-    }
+        margin-bottom: 10px;
+    }    
     .contact-info .message-form form button {
         font-size: 12px;
+        width: 100%;
     }
-    .socials ul li a {
-        font-size: 1.2em;
+    .socials .info{
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .socials .info ul{
+        width: 100%;
+        display: flex;
+    }
+    .socials ul li {
+        list-style: none;
+        padding: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4px;
+        border-radius: 10px;
+    }
+    .socials ul li a{
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 4px;
+        padding: 3px;
+        border-radius: 10px;
+        transition: all 1s ease-in;
+    }
+    .socials ul li a:hover{
+        background: #dc21b8;
     }
     footer {
         font-size: 0.8em;
