@@ -630,6 +630,7 @@ footer{
         flex-wrap: wrap;
     }
     .educationsection{
+        max-width: 600px;
         margin: 50px auto;
     }
     .educationsection::after{
@@ -698,5 +699,59 @@ footer{
     }
     .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
         max-width: 200px;
+    }
+}@media screen and (max-width: 480px) {
+    .nav{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .navlinks ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navlinks ul li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #title, #contact_links {
+        font-size: 2em;
+    }
+    .educationsection{
+        max-width: 100%;
+        margin: 50px auto;
+    }
+    .educationsection::after{
+        left: 40px;
+    }
+    .education_container{
+        width: 80%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .text_container{
+        font-size: 10px;
+    }
+    .text_container h3{
+        font-size: 15px;
+    }
+    .text_container #date{
+        margin-bottom: 10px;
+    }
+    .text_container p{
+        font-size: 10px;
+    }
+    .right{
+        left: 5px;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .right-arrow, .left-arrow{
+        border-right: 15px solid #dc21b8;
+        border-left: 0;
+        left: -20px;
+    }
+    footer {
+        font-size: 0.8em;
     }
 }

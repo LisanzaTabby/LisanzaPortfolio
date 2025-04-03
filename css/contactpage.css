@@ -448,7 +448,7 @@ footer{
     }
     .contact-info .message-form form input,
     .contact-info .message-form form textarea {
-        width: 50%;
+        width: 100%;
         padding: 8px;
         margin-bottom: 10px;
     }    
