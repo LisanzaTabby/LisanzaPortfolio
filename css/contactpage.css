@@ -435,10 +435,11 @@ footer{
         font-size: 2em;
     }
     .contact-info {
+        background: rgba(72, 0, 48, 0.8);
         padding: 0;
     }
     .contact-info .message-form {
-        max-width: 50%;
+        max-width: 75%;
         padding: 8px;
     }
     .contact-info .message-form h2 {
@@ -463,19 +464,19 @@ footer{
     .socials .info ul{
         width: 100%;
         display: flex;
+        flex-direction: column;
     }
     .socials ul li {
         list-style: none;
         padding: 4px;
         display: flex;
-        flex-wrap: wrap;
         margin: 4px;
         border-radius: 10px;
     }
     .socials ul li a{
         text-decoration: none;
         font-size: 1.5em;
-        margin: 4px;
+        margin: 2px;
         padding: 3px;
         border-radius: 10px;
         transition: all 1s ease-in;
