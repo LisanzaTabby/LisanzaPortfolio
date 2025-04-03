@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: "Merriweather", serif;
 }
-body{
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(rgba(18,0,12,255),rgba(19,1,13,255));
 }
 /*.box div{
@@ -114,24 +117,18 @@ body{
     border: 6px solid rgba(255,255,255,0.8);
     animation: animate 5s linear infinite;
 }
-header {
-    background: rgba(72, 0, 48, 0.8);
-    padding: 20px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
-}
-header nav{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 nav{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: rgba(72, 0, 48, 0.8);
+    padding: 15px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
     position: sticky;
-    backdrop-filter: blur(45px);
+    top: 0;
 }
 nav .logo h2{
     font-size: 2.5em;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 900;
     background: linear-gradient(#dc21b8,#4ac0fc);
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
@@ -151,7 +148,7 @@ nav .logo h2{
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    padding: 7px;
+    padding: 5px;
     text-transform: capitalize;
     transition: all 0.5s ease-out;
 }
@@ -162,13 +159,13 @@ nav .logo h2{
 .main{
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     justify-content: space-evenly;
     margin-top: 30px; 
     padding: 30px;
 }
 .main .profpic{
-    width: 20%;
-    height: 20%;
+    max-width: 300px;
 }
 .main .profpic img{
     display: block;
@@ -200,6 +197,7 @@ nav .logo h2{
     text-decoration: none;
     background: linear-gradient(90deg,#dc21b8,#4ac0fc);
     padding: 10px;
+    color: #fff;
     border-radius: 10px;
 }
 .socials ul{
@@ -209,10 +207,10 @@ nav .logo h2{
     list-style: none;
     padding: 10px;
 }
-
-.footer{
+footer{
     background: rgba(255,255,255,0.1);
     color: #fff;
+    padding: 10px;
     text-align: center;
 }
 @keyframes animate{
@@ -243,4 +241,68 @@ nav .logo h2{
     50% { transform: rotate(20deg); opacity: 1; }
     75% { transform: rotate(-20deg); opacity: 0.9; }
     100% { transform: rotate(0deg); opacity: 1; }
+}
+@media screen and (max-width: 600px){
+    .nav{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .navlinks ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    @keyframes movepic {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(30px); 
+        }
+        100% { 
+            transform: translateY(0); 
+        }        
+    }
+    .main .intro{
+        color: #fff;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .main .intro h2 .hand{
+        font-size: 2em;
+        display: inline-block;
+        transform-origin: center bottom;
+        animation: wavehand 3s ease-in-out 5;
+    }
+    .button{
+        padding: 10px;
+    }
+    .button a{
+        text-decoration: none;
+        background: linear-gradient(90deg,#dc21b8,#4ac0fc);
+        padding: 5px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .socials ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .socials ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    
 }

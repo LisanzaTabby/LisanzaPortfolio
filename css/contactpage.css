@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: "Merriweather", serif;
 }
-body{
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(rgba(18,0,12,255),rgba(19,1,13,255));
 }
 /*.box div{
@@ -114,24 +117,18 @@ body{
     border: 6px solid rgba(255,255,255,0.8);
     animation: animate 5s linear infinite;
 }
-header {
-    background: rgba(72, 0, 48, 0.8);
-    padding: 20px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
-}
-header nav{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 nav{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: rgba(72, 0, 48, 0.8);
+    padding: 15px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
     position: sticky;
-    backdrop-filter: blur(45px);
+    top: 0;
 }
 nav .logo h2{
     font-size: 2.5em;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 900;
     background: linear-gradient(#dc21b8,#4ac0fc);
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
@@ -151,7 +148,7 @@ nav .logo h2{
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    padding: 7px;
+    padding: 5px;
     text-transform: capitalize;
     transition: all 0.5s ease-out;
 }
@@ -159,9 +156,132 @@ nav .logo h2{
     font-size: 2em;
     background-color: #4ac0fc;
 }
-.footer{
+#title{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+#title::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc) ;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    margin-top: 30px; 
+    padding: 30px;
+}
+.contact-info {
+    display: flex;
+    gap: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-info .info {
+    flex: 1;
+}
+
+.contact-info .info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#contact_links{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(#dc21b8,#4ac0fc);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+#contact_links::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc) ;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.contact-info .message-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info .message-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info .message-form form input,
+.contact-info .message-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-info .message-form form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(90deg,#dc21b8,#4ac0fc);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info .message-form form button:hover {
+    background: black;
+}
+
+.socials .info ul{
+    display: flex;
+}
+.socials ul li {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+}
+.socials ul li a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+}
+.socials ul li a:hover{
+    background: #dc21b8;
+}
+footer{
     background: rgba(255,255,255,0.1);
     color: #fff;
+    padding: 10px;
     text-align: center;
 }
 @keyframes animate{
@@ -192,4 +312,139 @@ nav .logo h2{
     50% { transform: rotate(20deg); opacity: 1; }
     75% { transform: rotate(-20deg); opacity: 0.9; }
     100% { transform: rotate(0deg); opacity: 1; }
+}
+@media screen and (max-width: 600px){
+    .nav{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .navlinks ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-info {
+        display: flex;
+        gap: 10px;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .socials{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .contact-info .message-form {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    .contact-info .message-form h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-info .message-form form input,
+    .contact-info .message-form form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-info .message-form form button {
+        width: 100%;
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .socials .info ul{
+        display: flex;
+    }
+    .socials ul li {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navlinks ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .socials {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #title, #contact_links {
+        font-size: 2.5em;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+    .contact-info .message-form {
+        padding: 15px;
+    }
+    .contact-info .message-form h2 {
+        font-size: 18px;
+    }
+    .contact-info .message-form form button {
+        font-size: 14px;
+    }
+    .socials ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav .logo h2 {
+        font-size: 1.5em;
+    }
+    .navlinks ul li a {
+        font-size: 1em;
+    }
+    #title, #contact_links {
+        font-size: 2em;
+    }
+    .contact-info {
+        padding: 10px;
+    }
+    .contact-info .message-form {
+        padding: 15px;
+    }
+    .contact-info .message-form h2 {
+        font-size: 14px;
+    }
+    .contact-info .message-form form input,
+    .contact-info .message-form form textarea {
+        padding: 8px;
+    }
+    .contact-info .message-form form button {
+        font-size: 12px;
+    }
+    .socials ul li a {
+        font-size: 1.2em;
+    }
+    footer {
+        font-size: 0.8em;
+    }
 }
