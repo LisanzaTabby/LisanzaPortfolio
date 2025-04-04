@@ -54,7 +54,9 @@
                 </div>
                 <div class="message-form">
                     <h2 id="contact_links">Send Me a Message</h2>
-                    <form action="https://script.google.com/macros/s/AKfycbzAlFIL3Oi74FFBcJ-1QlaJBxoktDVCHq2Tb7ougKZwIWaMvY1vx4zh-PigZceonUkN/exec"method="POST" target="_blank"name="formData">
+                    <!--Web3formAPI Access link with GMAIL API Link --->
+                    <form action="https://api.web3forms.com/submit" method="POST"name="formData">
+                        <input type="hidden" name="access_key" value="30807a68-24d1-4520-a86b-b190427c76d1">
                         <input type="text" placeholder="Name" name="name" required>
                         <input type="email" placeholder="E-mail address" name="email" required>
                         <textarea placeholder="Message" rows="5"name="message" required></textarea>

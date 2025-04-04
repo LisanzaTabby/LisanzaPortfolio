@@ -264,6 +264,10 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    .main .profpic img{
+        display: block;
+        z-index: -1;
+    }
     @keyframes movepic {
         0%{
             transform: translateY(0);
