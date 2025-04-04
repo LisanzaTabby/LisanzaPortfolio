@@ -1,4 +1,0 @@
-Body color = "rgb(19, 20, 22)|| rgb(35, 27, 64)|| rgb(160, 69, 198)||rgb(8, 26, 40)"
-Button colors= "rgb(255, 190, 196)||rgb(95, 159, 99)"
-Letter colors = "rgb(221, 163, 247)"
-Review cards colors = "rgb(255, 190, 196) & rgb(139, 111, 222)||rgb(254, 227, 236)"

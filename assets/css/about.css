@@ -621,14 +621,6 @@ nav .logo h2{
     animation: appear 1s linear forwards;
     opacity: 0;
 }
-.experiencesection .experience_container .experience_text{
-    padding: 20px 30px;
-    position: relative;
-    text-align: right;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 15px;
-}
 .experience_container:nth-child(2){
     animation-delay: 1s;
 }
@@ -638,6 +630,15 @@ nav .logo h2{
 .experience_container:nth-child(4){
     animation-delay: 3s;
 }
+.experiencesection .experience_container .experience_text{
+    padding: 20px 30px;
+    position: relative;
+    text-align: justify;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
 .right {
     left: 50%;
 }
@@ -785,6 +786,9 @@ footer{
     .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
         max-width: 100px;
     }
+    #experience{
+        font-size: 2em ;
+    }
     .experiencesection{
         max-width: 600px;
         margin: 50px auto;
@@ -812,7 +816,7 @@ footer{
     .right{
         left: 5px;
     }
-    .experience_container img{
+    .left img, .right img{
         left: 10px;
     }
 }
@@ -843,6 +847,27 @@ footer{
     }
     .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
         max-width: 200px;
+    }
+    .experiencesection{
+        margin: 70px auto;
+    }
+    .experience_container{
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 30px;
+    }
+    .experience_text{
+        width: 160px;
+        font-size: 13px;
+    }
+    .experience_text h2{
+        font-size: 15px;
+    }
+    .experience_text .date{
+        margin-bottom: 10px;
+    }
+    .experience_text p{
+        font-size: 10px;
     }
 }@media screen and (max-width: 480px) {
     .nav{
@@ -914,10 +939,9 @@ footer{
         padding-right: 25px;
     }
     .experience_text{
-        width: 120px;
+        width: 160px;
         font-size: 10px;
         position: relative;
-        left: 0;
         word-wrap: break-word;
     }
     .experience_text h2{
