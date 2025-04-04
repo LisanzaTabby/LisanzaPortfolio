@@ -253,6 +253,16 @@ nav .logo h2{
     margin: 10px auto 0;
     border-radius: 2px;
 }
+.bioinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1em;
+}
+.bioinfo .field{
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .bio p{
     font-size: 1em;
     padding: 10px;
