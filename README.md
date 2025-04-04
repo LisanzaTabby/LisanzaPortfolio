@@ -6,7 +6,7 @@ Hi 👋 there, welcome to my personal portfolio website! This project showcases 
 
 ## 🌐 Website Link
 
-[Visit My Portfolio](https://lisanzatabitha.netlify.app/)
+https://lisanzatabitha.netlify.app/
 
 ---
 
