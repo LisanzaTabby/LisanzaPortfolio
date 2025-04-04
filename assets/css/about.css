@@ -848,27 +848,6 @@ footer{
     .aboutmesection .imagecontainer .back,.aboutmesection .imagecontainer .middle,.aboutmesection .imagecontainer .front{
         max-width: 200px;
     }
-    .experiencesection{
-        margin: 70px auto;
-    }
-    .experience_container{
-        width: 100%;
-        padding-left: 90px;
-        padding-right: 30px;
-    }
-    .experience_text{
-        width: 160px;
-        font-size: 13px;
-    }
-    .experience_text h2{
-        font-size: 15px;
-    }
-    .experience_text .date{
-        margin-bottom: 10px;
-    }
-    .experience_text p{
-        font-size: 10px;
-    }
 }@media screen and (max-width: 480px) {
     .nav{
         max-width: 100%;
