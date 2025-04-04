@@ -703,7 +703,7 @@ footer{
 }@media screen and (max-width: 480px) {
     .nav{
         max-width: 100%;
-        padding: 10px;
+        padding: 8px;
     }
     .navlinks ul{
         display: flex;
@@ -717,19 +717,21 @@ footer{
         font-size: 2em;
     }
     .educationsection{
-        max-width: 100%;
-        margin: 50px auto;
+        max-width: 1000px;
+        margin: 0 auto;
     }
     .educationsection::after{
         left: 40px;
     }
     .education_container{
-        width: 80%;
-        padding-left: 70px;
+        width: 100%;
+        padding-left: 50px;
         padding-right: 25px;
     }
     .text_container{
+        width: 120px;
         font-size: 10px;
+        word-wrap: break-word;
     }
     .text_container h3{
         font-size: 15px;
